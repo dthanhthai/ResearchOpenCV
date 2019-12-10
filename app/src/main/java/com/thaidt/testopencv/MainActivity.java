@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.colorBlobDetectionBtn).setOnClickListener(this);
         findViewById(R.id.drawHistogramBtn).setOnClickListener(this);
+        findViewById(R.id.floodFillmBtn).setOnClickListener(this);
+        findViewById(R.id.newFloodFillmBtn).setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, ColorBlodDetectionActivity.class));
                 break;
             case R.id.drawHistogramBtn:
+                startActivity(new Intent(this, EdgeDetectionActivity.class));
+                break;
+            case R.id.floodFillmBtn:
+                startActivity(new Intent(this, FloodFillActivity.class));
+                break;
+            case R.id.newFloodFillmBtn:
+                startActivity(new Intent(this, NewFloodFillActivity.class));
                 break;
         }
     }

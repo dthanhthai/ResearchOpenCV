@@ -23,4 +23,17 @@
         android:text="Draw Histogram"
         android:layout_margin="16dp"/>
 
+    <Button
+        android:id="@+id/floodFillmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flood Fill Color"
+        android:layout_margin="16dp"/>
+    <Button
+        android:id="@+id/newFloodFillmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Flood Fill Color"
+        android:layout_margin="16dp"/>
+
 </LinearLayout>
