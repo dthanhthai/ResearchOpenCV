@@ -340,7 +340,7 @@ public class NewFloodFillActivity extends AppCompatActivity implements View.OnTo
         @Override
         protected Bitmap doInBackground(Void... params) {
             QueueLinearFloodFiller queueLinearFloodFiller = new QueueLinearFloodFiller(bmp, fillBmp, oldColor, newColor);
-            queueLinearFloodFiller.setTolerance(9 * 255 / 100);
+            queueLinearFloodFiller.setTolerance(11 * 255 / 100);
             queueLinearFloodFiller.floodFill(pt.x, pt.y);
             return queueLinearFloodFiller.getFillImage();
         }

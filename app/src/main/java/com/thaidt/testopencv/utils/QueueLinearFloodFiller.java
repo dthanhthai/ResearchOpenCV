@@ -196,6 +196,7 @@ public class QueueLinearFloodFiller {
 
             // **exit loop if we're at edge of bitmap or color area
             if (lFillLoc < 0 || (pixelsChecked[pxIdx]) || !CheckPixel(pxIdx)) {
+//            if (lFillLoc < 0 ||  !CheckPixel(pxIdx)) {
                 break;
             }
         }
@@ -221,6 +222,7 @@ public class QueueLinearFloodFiller {
 
             // **exit loop if we're at edge of bitmap or color area
             if (rFillLoc >= width || pixelsChecked[pxIdx] || !CheckPixel(pxIdx)) {
+//            if (rFillLoc >= width || !CheckPixel(pxIdx)) {
                 break;
             }
         }
